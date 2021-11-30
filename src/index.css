@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #f2f2f2; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .nav{
+  margin-left: 20px;
+} */
+
+.login__main__container {
+  background-color: #ffffff;
+  width: 25vw;
+  height: 70vh;
+  margin: auto;
+  margin-top: 10vh;
+  border-radius: 10px;
+  box-shadow: 0rem 0.5rem 2rem 0rem rgba(0, 0, 0, 0.2);
+  /* box-shadow: -1px 1px 20px 0px #dbd3d3; */
+  position: relative;
+}
+.login__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  /* margin-top: 10px; */
+}
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.login__container button {
+  width: 90%;
+  margin-top: 30px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: #199dd9;
+  color: white;
+  height: 45px;
+  border: none;
+  outline: 0px;
+  /* box-shadow: 2px 2px 2px red; */
+}
+
+.login__container button:hover {
+  background-color: #08aaf5;
+}
+
+hr {
+  display: none;
+}
+
+.header__maincontiner {
+  width: 100vw;
+  height: 10vh;
+  /* border: 1px solid red; */
+  box-shadow: 0rem 1.2rem 2rem 0rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  /* margin-top: -41px;
+  margin-bottom: 30px; */
+}
+.header__maincontiner img {
+  width: 33px;
+  height: 31px;
+  margin-left: 20px;
+  object-fit: contain;
+}
+
+.header__maincontiner ul {
+  display: flex;
+}
+
+.header__maincontiner ul li {
+  list-style: none;
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.header__maincontiner ul li:nth-child(2) {
+  margin-left: 80vw;
+}
+
+.question__container {
+  width: 90vw;
+  margin: auto;
+}
+
+.btn button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn button:hover {
+  background-color: #199dd9;
+  border-radius: 5px;
+  color: white;
+  transition: 0.7s;
+}
+
+/* .tab__container {
+  width: 90vw;
+  margin: auto;
+} */
+
+.lan_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-left: 45px;
+}
+/* .tab__container button {
+  width: 90%;
+  margin-top: 30px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 20px;
+  background: #729187;
+  color: white;
+  height: 45px;
+  border: none;
+  outline: 0px;
+  box-shadow: 5px 12px 20px 0px #312a2a;
+} */
+
+@media screen and (max-width: 800px) {
+  .login__main__container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login__main__container {
+    width: 80%;
+  }
+}
+
+/* questions styling  */
+
+h2 {
+  margin: 40px auto 20px auto;
+}
+.ques {
+  font-size: 30px;
+  color: blue;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 2px 1px 9px 3px #d9d6d6;
+}
+
+/* styling of the buttons  */
+
+.tab__container {
+  width: 90vw;
+  margin: auto;
+}
+
+.tab__container button {
+  width: 75%;
+  height: 20%;
+  margin-top: 40px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 20px;
+  background: #0d6efd;
+  color: white;
+  height: 200px;
+  border: none;
+  font-size: 40px;
+  outline: 0px;
+  transition: 0.5s;
+}
+
+.tab__container button:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 12px 20px 0px #312a2a;
+}
+
+.btn_button {
+  width: 160px;
+  margin: 30px 0px 20px 83vw;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: #199dd9;
+  color: white;
+  height: 45px;
+  border: none;
+  outline: 0px;
+}
+.btn_buttons {
+  width: 160px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: #199dd9;
+  color: white;
+  height: 45px;
+  border: none;
+  outline: 0px;
+}
+
+.ques_1 {
+  width: 50vw;
+  margin: auto;
+}
+
+.ques_1 h3 {
+  color: #312a2a;
+}
